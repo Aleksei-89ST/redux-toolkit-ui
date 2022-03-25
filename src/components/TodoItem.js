@@ -7,7 +7,7 @@ const TodoItem = ({todo}) => {
                 Complete
             </div>
             <div className={`text-sm ${todo.completed ? 'line-through font-medium text-lime-400' : ''}`}>
-                Todo Text
+                {todo.text}
             </div>
             <div className='text-sm px-4 py-2 flex bg-red-400 hover:bg-red-500 transition-all text-white cursor-pointer'>
                 Delete
